@@ -8,7 +8,7 @@ COPY . .
 
 RUN mvn clean install -DskipTests
 
-FROM openjdk:21
+FROM openjdk:17-jdk-slim
 
 WORKDIR /app
 EXPOSE 8080
